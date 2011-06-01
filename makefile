@@ -5,4 +5,4 @@ all: ./binary/x.elf
 	g++ ./source/main.cpp -c -o ./objects/main.o
 ./objects/StudentTicket.o: ./source/StudentTicket.hpp ./source/StudentTicket.cpp
 	g++ ./source/StudentTicket.cpp -c -o ./objects/StudentTicket.o
-	
+

@@ -24,7 +24,25 @@ arising from the use of this software.
 
 int main(int argc, char ** argv){
 
+	string str;
+	long long x;
+	int y;
+
 	StudentTicket * ticket = new StudentTicket;
+	
+	if (argc < 2){
+	
+		printf("usage: x Part Id\n");
+		return 0;
+		
+	}
+	
+	string Part = argv[1];
+	
+	string IdString = argv[2];
+	sscanf(IdString.c_str(), "%lld", &x);
+	
+	long long Id = x;
 
 /*	University		=	"Donetsk National University";
 	Part			=	"CA";
@@ -48,12 +66,8 @@ int main(int argc, char ** argv){
 	Photo			=	0;
 	BarCode			=	0;*/
 	
-	string str;
-	long long x;
-	int y;
-	
-	string fPart = "KN";
-	long long fId = 16487357;
+	string fPart = Part;
+	long long fId = Id;
 	
 	char buff[30];
 	sprintf(buff, "./data/%s_%lld", fPart.c_str(), fId);
