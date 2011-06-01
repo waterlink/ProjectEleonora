@@ -19,4 +19,33 @@ main entity of application
 
 #include "StudentTicket.hpp"
 
+StudentTicket::StudentTicket(){
+
+	// sample here :)
+	
+	University		=	"Donetsk National University";
+	Part			=	"CA";
+	Id			=	16487351;
+	IssueDateYear		=	2009;
+	IssueDateMonth		=	9;
+	IssueDateDay		=	1;
+	ExpirationDateYear	=	2013;
+	ExpirationDateMonth	=	6;
+	ExpirationDateDay	=	30;
+	SurName			=	"Pupkin";
+	Name			=	"Vasiliy";
+	FatherName		=	"Petrovich";
+	Faculty			=	"Physics";
+	StructuredUnit		=	"";
+	StudyType		=	"Day";
+	Specialization		=	"IDSS";
+	Group			=	"A";
+	EntranceYear		=	2009;
+	RectorCredentials	=	"Shevchenko V. P.";
+	Photo			=	0;
+	BarCode			=	0;
+
+}
+StudentTicket::~StudentTicket(){}
+
 

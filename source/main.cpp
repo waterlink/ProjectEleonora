@@ -19,9 +19,41 @@ arising from the use of this software.
 
 #include "StudentTicket.hpp"
 
+#include <cstdio>
+
 int main(int argc, char ** argv){
 
-
+/*	University		=	"Donetsk National University";
+	Part			=	"CA";
+	Id			=	16487351;
+	IssueDateYear		=	2009;
+	IssueDateMonth		=	9;
+	IssueDateDay		=	1;
+	ExpirationDateYear	=	2013;
+	ExpirationDateMonth	=	6;
+	ExpirationDateDay	=	30;
+	SurName			=	"Pupkin";
+	Name			=	"Vasiliy";
+	FatherName		=	"Petrovich";
+	Faculty			=	"Physics";
+	StructuredUnit		=	"";
+	StudyType		=	"Day";
+	Specialization		=	"IDSS";
+	Group			=	"A";
+	EntranceYear		=	2009;
+	RectorCredentials	=	"Shevchenko V. P.";
+	Photo			=	0;
+	BarCode			=	0;*/
+	
+	string fPart = "KN";
+	long long fId = 16487357;
+	
+	char buff[30];
+	sprintf(buff, "./data/%s_%lld", fPart.c_str(), fId);
+	
+	string fPath = buff;
+	
+	FILE * fin = fopen(fPath.c_str(), "r");
 
 	return 0;
 
