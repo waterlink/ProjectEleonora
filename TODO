@@ -30,7 +30,7 @@
 	- scan and compare barcode
 	
 4) application input:
-	- Part-Id passed through command line
+  OK	- Part-Id passed through command line
 	
 5) application output:
 	- StudentTicket information on console screen
