@@ -1,5 +1,5 @@
 1) entities:
-	- StudentTicket		data				example
+  OK	- StudentTicket		data				example
 				- University			Donetsk National University
 				- Part				CA
 				- Id				16487351
