@@ -21,3 +21,17 @@
 				- RectorCredentials		Shevchenko V. P.
 				- Photo				<image data>
 				- BarCode			<barcode data>
+				
+2) functionality:
+	- get from database one StudentTicket by Part-Id and show it on console screen
+	
+3) future functionality:
+	- show photo
+	- scan and compare barcode
+	
+4) application input:
+	- Part-Id passed through command line
+	
+5) application output:
+	- StudentTicket information on console screen
+
