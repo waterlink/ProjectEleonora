@@ -1,0 +1,37 @@
+1) entities:
+	- StudentTicket		data				example
+				- University			Donetsk National University
+				- Part				CA
+				- Id				16487351
+				- IssueDateYear			2009
+				- IssueDateMonth		9
+				- IssueDateDay			1
+				- ExpirationDateYear		2013
+				- ExpirationDateMonth		6
+				- ExpirationDateDay		30
+				- SurName			Pupkin
+				- Name				Vasiliy
+				- FatherName			Petrovich
+				- Faculty			Physics
+				- StructuredUnit		null
+				- StudyType			Day
+				- Specialization		IDSS
+				- Group				A
+				- EntranceYear			2009
+				- RectorCredentials		Shevchenko V. P.
+				- Photo				<image data>
+				- BarCode			<barcode data>
+				
+2) functionality:
+	- get from database one StudentTicket by Part-Id and show it on console screen
+	
+3) future functionality:
+	- show photo
+	- scan and compare barcode
+	
+4) application input:
+	- Part-Id passed through command line
+	
+5) application output:
+	- StudentTicket information on console screen
+
