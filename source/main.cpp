@@ -74,8 +74,7 @@ int main(int argc, char ** argv){
 	
 	string fPath = buff;
 	
-	freopen(fPath.c_str(), "r", stdin);
-	if (!stdin){
+	if (!freopen(fPath.c_str(), "r", stdin)){
 	
 		printf("Ticket not found.\n");
 		return 0;
