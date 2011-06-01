@@ -17,6 +17,8 @@ arising from the use of this software.
 
 #include "main.hpp"
 
+#include "StudentTicket.hpp"
+
 int main(int argc, char ** argv){
 
 
