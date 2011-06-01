@@ -23,7 +23,7 @@
 				- BarCode			<barcode data>
 				
 2) functionality:
-	- get from database one StudentTicket by Part-Id and show it on console screen
+  OK	- get from database one StudentTicket by Part-Id and show it on console screen
 	
 3) future functionality:
 	- show photo

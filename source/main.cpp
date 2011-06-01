@@ -24,7 +24,7 @@ arising from the use of this software.
 
 int main(int argc, char ** argv){
 
-	
+	StudentTicket * ticket = new StudentTicket;
 
 /*	University		=	"Donetsk National University";
 	Part			=	"CA";
@@ -48,6 +48,10 @@ int main(int argc, char ** argv){
 	Photo			=	0;
 	BarCode			=	0;*/
 	
+	string str;
+	long long x;
+	int y;
+	
 	string fPart = "KN";
 	long long fId = 16487357;
 	
@@ -56,15 +60,78 @@ int main(int argc, char ** argv){
 	
 	string fPath = buff;
 	
-	FILE * fin = fopen(fPath.c_str(), "r");
-	if (!fin){
+	freopen(fPath.c_str(), "r", stdin);
+	if (!stdin){
 	
 		printf("Ticket not found.\n");
 		return 0;
 	
 	}
 	
+	getline(cin, str);
+	ticket->setUniversity(str);
 	
+	getline(cin, str);
+	ticket->setPart(str);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%lld", &x);
+	ticket->setId(x);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setIssueDateYear(y);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setIssueDateMonth(y);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setIssueDateDay(y);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setExpirationDateYear(y);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setExpirationDateMonth(y);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setExpirationDateDay(y);
+	
+	getline(cin, str);
+	ticket->setSurName(str);
+	
+	getline(cin, str);
+	ticket->setName(str);
+	
+	getline(cin, str);
+	ticket->setFatherName(str);
+	
+	getline(cin, str);
+	ticket->setFaculty(str);
+	
+	getline(cin, str);
+	ticket->setStructuredUnit(str);
+	
+	getline(cin, str);
+	ticket->setStudyType(str);
+	
+	getline(cin, str);
+	ticket->setSpecialization(str);
+	
+	getline(cin, str);
+	ticket->setGroup(str);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setEntranceYear(y);
+	
+	getline(cin, str);
+	ticket->setRectorCredentials(str);
 
 	return 0;
 
