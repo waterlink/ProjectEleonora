@@ -20,8 +20,11 @@ arising from the use of this software.
 #include "StudentTicket.hpp"
 
 #include <cstdio>
+#include <iostream>
 
 int main(int argc, char ** argv){
+
+	
 
 /*	University		=	"Donetsk National University";
 	Part			=	"CA";
@@ -54,6 +57,14 @@ int main(int argc, char ** argv){
 	string fPath = buff;
 	
 	FILE * fin = fopen(fPath.c_str(), "r");
+	if (!fin){
+	
+		printf("Ticket not found.\n");
+		return 0;
+	
+	}
+	
+	
 
 	return 0;
 
