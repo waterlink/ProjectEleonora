@@ -23,6 +23,32 @@ arising from the use of this software.
 
 #include <iostream>
 
+void showticket(StudentTicket * ticket){
+
+	printf("University %s\n", ticket->getUniversity().c_str());
+	printf("Part %s\n", ticket->getPart().c_str());
+	printf("Id %lld\n", ticket->getId());
+	printf("IssueDateYear %d\n", ticket->getIssueDateYear());
+	printf("IssueDateMonth %d\n", ticket->getIssueDateMonth());
+	printf("IssueDateDay %d\n", ticket->getIssueDateDay());
+	printf("ExpirationDateYear %d\n", ticket->getExpirationDateYear());
+	printf("ExpirationDateMonth %d\n", ticket->getExpirationDateMonth());
+	printf("ExpirationDateDay %d\n", ticket->getExpirationDateDay());
+	printf("SurName %s\n", ticket->getSurName().c_str());
+	printf("Name %s\n", ticket->getName().c_str());
+	printf("FatherName %s\n", ticket->getFatherName().c_str());
+	printf("Faculty %s\n", ticket->getFaculty().c_str());
+	printf("StructuredUnit %s\n", ticket->getStructuredUnit().c_str());
+	printf("StudyType %s\n", ticket->getStudyType().c_str());
+	printf("Specialization %s\n", ticket->getSpecialization().c_str());
+	printf("Group %s\n", ticket->getGroup().c_str());
+	printf("EntranceYear %d\n", ticket->getEntranceYear());
+	printf("RectorCredentials %s\n", ticket->getRectorCredentials().c_str());
+	printf("Photo %s\n", "< photo sample >");
+	printf("BarCode %s\n", "< barcode sample >");
+
+}
+
 bool readticket(StudentTicket * ticket, string Part, long long Id){
 
 	string str;
@@ -204,7 +230,9 @@ bool getTicket(string Part, long long Id){
 	getline(cin, str);
 	ticket->setRectorCredentials(str);*/
 	
-	printf("University %s\n", ticket->getUniversity().c_str());
+	showticket(ticket);
+	
+	/*printf("University %s\n", ticket->getUniversity().c_str());
 	printf("Part %s\n", ticket->getPart().c_str());
 	printf("Id %lld\n", ticket->getId());
 	printf("IssueDateYear %d\n", ticket->getIssueDateYear());
@@ -224,7 +252,7 @@ bool getTicket(string Part, long long Id){
 	printf("EntranceYear %d\n", ticket->getEntranceYear());
 	printf("RectorCredentials %s\n", ticket->getRectorCredentials().c_str());
 	printf("Photo %s\n", "< photo sample >");
-	printf("BarCode %s\n", "< barcode sample >");
+	printf("BarCode %s\n", "< barcode sample >");*/
 	
 	delete ticket;
 	
