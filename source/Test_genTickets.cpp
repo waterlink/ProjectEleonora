@@ -120,6 +120,19 @@ int main (int argc, char const* argv[]){
 	
 	}
 	
+	for (int i = 201; i < 250; ++i){
+	
+		st->setPart(randstr(5, 20, 'a', 'z'));
+		st->setId(randint(100000000, 100010000));
+	
+		sprintf(buffer, "./test/tests/test%d.test", i);	
+		freopen(buffer, "w", stdout);		
+		printf("%s %lld\n", st->getPart().c_str(), st->getId());
+		
+		sprintf(buffer, "./data/%s_%lld", st->getPart().c_str(), st->getId());
+	
+	}
+	
 	return 0;
 }
 

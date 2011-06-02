@@ -36,14 +36,14 @@
   OK	- StudentTicket information on console screen
   
 6) fill "database"
-	- gen about 200 students
-	- add 10 specific students
+  OK	- gen about 200 students
+  OKT	- add 10 specific students
 	
 7) test class (testing for each function, which belongs to refactor)
 	- StudentTicketTest
   OK	- mainTest
 	
 8) create tests
-	- class for generating student tickets
-	- class for generating tests and right answers to them
+  OKT	- class for generating student tickets
+  ##	- class for generating tests and right answers to them
 

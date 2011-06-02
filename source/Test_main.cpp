@@ -77,6 +77,7 @@ int main (int argc, char const* argv[]){
 	string params = "";
 	int aretherediffs;
 	string str = "";
+	int okcount = 0;
 	for (int i = 0; i < tests.size(); ++i){
 	
 		// Get params
@@ -120,9 +121,9 @@ int main (int argc, char const* argv[]){
 			
 			// Setup diff paths
 			sprintf(buffer, "%d", i);
-			difforig = "cp " + origoutpath + " " + diffpath + buffer + ".orig.test";
-			diffout = "cp " + outpath + " " + diffpath + buffer + ".out.test";
-			diffdiff = "cp " + temppath + " " + diffpath + buffer + ".diff.test";
+			difforig = "cp " + origoutpath + " " + diffpath + buffer + ".orig.temp";
+			diffout = "cp " + outpath + " " + diffpath + buffer + ".out.temp";
+			diffdiff = "cp " + temppath + " " + diffpath + buffer + ".diff.temp";
 			
 			// And copy them
 			sys(difforig);
@@ -130,9 +131,16 @@ int main (int argc, char const* argv[]){
 			sys(diffdiff);
 		
 		}
-		else printf("Test %d: OK\n", i);
+		else {
+		
+			printf("Test %d: OK\n", i);
+			++okcount;
+			
+		}
 	
 	}
+	
+	printf("Summary: %d/%d\n", okcount, tests.size());
 	
 	return 0;
 }
