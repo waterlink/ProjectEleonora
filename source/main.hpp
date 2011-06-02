@@ -34,6 +34,8 @@ public:
 	void showticket();
 	bool readticket(string Part, long long Id);
 	bool getTicket(string Part, long long Id);
+	
+	void readUniversity();
 
 private:
 

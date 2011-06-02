@@ -54,6 +54,14 @@ void TicketManager::showticket(){
 
 }
 
+void TicketManager::readUniversity(){
+
+	string str;
+	getline(cin, str);
+	ticket->setUniversity(str);
+
+}
+
 bool TicketManager::readticket(string fPart, long long fId){
 
 	string str;
@@ -72,8 +80,9 @@ bool TicketManager::readticket(string fPart, long long fId){
 	
 	}
 	
-	getline(cin, str);
-	ticket->setUniversity(str);
+//	getline(cin, str);
+//	ticket->setUniversity(str);
+	readUniversity();
 	
 	getline(cin, str);
 	ticket->setPart(str);
@@ -143,14 +152,10 @@ bool TicketManager::readticket(string fPart, long long fId){
 
 bool TicketManager::getTicket(string Part, long long Id){
 
-	//StudentTicket * ticket = new StudentTicket;
-	
 	if (!readticket(Part, Id))
 		return false;
 	
 	showticket();
-	
-	//delete ticket;
 	
 	return true;
 
@@ -161,8 +166,6 @@ int main(int argc, char ** argv){
 	string str;
 	long long x;
 
-	//StudentTicket * ticket = new StudentTicket;
-	
 	if (argc < 2){
 	
 		printf("usage: x Part Id\n");
