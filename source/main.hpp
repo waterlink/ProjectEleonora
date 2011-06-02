@@ -28,16 +28,16 @@ class TicketManager{
 
 public:
 
-	TicketManager(){}
-	~TicketManager(){}
+	TicketManager();
+	~TicketManager();
 	
-	void showticket(StudentTicket * ticket);
-	bool readticket(StudentTicket * ticket, string Part, long long Id);
+	void showticket();
+	bool readticket(string Part, long long Id);
 	bool getTicket(string Part, long long Id);
 
 private:
 
-	
+	StudentTicket * ticket;
 
 };
 
