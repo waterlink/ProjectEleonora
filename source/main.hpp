@@ -18,7 +18,28 @@ arising from the use of this software.
 #ifndef __main_H__
 #define __main_H__
 
+#include <cstdio>
 
+#include "StudentTicket.hpp"
+
+#include <iostream>
+
+class TicketManager{
+
+public:
+
+	TicketManager(){}
+	~TicketManager(){}
+	
+	void showticket(StudentTicket * ticket);
+	bool readticket(StudentTicket * ticket, string Part, long long Id);
+	bool getTicket(string Part, long long Id);
+
+private:
+
+	
+
+};
 
 #endif /* __main_H__ */
 

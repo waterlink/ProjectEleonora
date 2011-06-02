@@ -17,13 +17,7 @@ arising from the use of this software.
 
 #include "main.hpp"
 
-#include <cstdio>
-
-#include "StudentTicket.hpp"
-
-#include <iostream>
-
-void showticket(StudentTicket * ticket){
+void TicketManager::showticket(StudentTicket * ticket){
 
 	printf("University %s\n", ticket->getUniversity().c_str());
 	printf("Part %s\n", ticket->getPart().c_str());
@@ -49,7 +43,7 @@ void showticket(StudentTicket * ticket){
 
 }
 
-bool readticket(StudentTicket * ticket, string Part, long long Id){
+bool TicketManager::readticket(StudentTicket * ticket, string Part, long long Id){
 
 	string str;
 	long long x;
@@ -139,7 +133,7 @@ bool readticket(StudentTicket * ticket, string Part, long long Id){
 
 }
 
-bool getTicket(string Part, long long Id){
+bool TicketManager::getTicket(string Part, long long Id){
 
 	string str;
 	long long x;
@@ -180,7 +174,11 @@ int main(int argc, char ** argv){
 	
 	long long Id = x;
 	
-	getTicket(Part, Id);
+	TicketManager * tm = new TicketManager;
+	
+	tm->getTicket(Part, Id);
+	
+	delete tm;
 
 	return 0;
 
