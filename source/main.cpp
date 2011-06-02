@@ -135,10 +135,6 @@ bool TicketManager::readticket(StudentTicket * ticket, string Part, long long Id
 
 bool TicketManager::getTicket(string Part, long long Id){
 
-	string str;
-	long long x;
-	int y;
-
 	StudentTicket * ticket = new StudentTicket;
 	
 	if (!readticket(ticket, Part, Id))
