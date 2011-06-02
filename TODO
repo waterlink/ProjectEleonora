@@ -41,7 +41,7 @@
 	
 7) test class (testing for each function, which belongs to refactor)
 	- StudentTicketTest
-	- mainTest
+  OK	- mainTest
 	
 8) create tests
 	- class for generating student tickets

@@ -166,7 +166,7 @@ int main(int argc, char ** argv){
 	printf("EntranceYear %d\n", ticket->getEntranceYear());
 	printf("RectorCredentials %s\n", ticket->getRectorCredentials().c_str());
 	printf("Photo %s\n", "< photo sample >");
-	printf("BarCode %s\n", "< barcode sample >");			
+	printf("BarCode %s\n", "< barcode sample >");
 
 	return 0;
 

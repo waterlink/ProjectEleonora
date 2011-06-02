@@ -23,10 +23,11 @@ arising from the use of this software.
 
 #include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
-void cmd(string command){ 
+void sys(string command){ 
 
 	system(command.c_str()); 
 	
@@ -46,7 +47,7 @@ int main (int argc, char const* argv[]){
 	string getalltestscommand = "ls " + testspath + "*.test" + " > " + temppath;
 	string diffcommand = "diff " + outpath + " " + origoutpath + " > " + temppath;
 	string cleancommand = "rm " + outpath + " " + origoutpath + " " + temppath;
-	string diffrescommand = "ll " + temppath + " > " + exttemppath;
+	string diffrescommand = "ls --full-time " + temppath + " > " + exttemppath;
 	
 	string runcommand = "";
 	string runorigcommand = "";
@@ -70,42 +71,47 @@ int main (int argc, char const* argv[]){
 	}
 	while (getline(cin, currtest))
 		tests.push_back(currtest);
-	fclose(stdin);
+	//fclose(stdin);
 		
 	// Enumerate all tests
-	string params;
+	string params = "";
 	int aretherediffs;
+	string str = "";
 	for (int i = 0; i < tests.size(); ++i){
 	
 		// Get params
-		stdin = fopen((testspath + tests[i]).c_str(), "r");
-		if (!stdin){
+		cout << tests[i] << endl;
+		if (!freopen(tests[i].c_str(), "r", stdin)){
 		
 			printf("There is no such test: %d\n", i);
 			return 0;
 		
 		}
-		getline(cin, params);
-		fclose(stdin);
+		//getline(cin, params);
+		scanf("%[^\n]", buffer);
+		params = buffer;
+		//fclose(stdin);
 		
 		// Run program and original
 		runcommand = binpath + " " + params + " > " + outpath;
 		runorigcommand = origpath + " " + params + " > " + origoutpath;
+		cout << runcommand << endl;
+		cout << runorigcommand << endl;
 		sys(runcommand);
 		sys(runorigcommand);
 		
 		// Check if there are any differences
 		sys(diffcommand);
 		sys(diffrescommand);
-		stdin = fopen(exttemppath, "r");
-		if (!stdin){
+		if (!freopen(exttemppath.c_str(), "r", stdin)){
 		
 			printf("There is no exttemp file\n");
 			return 0;
 		
 		}
-		cin >> str >> str >> str >> str >> aretherediffs;
-		fclose(stdin);
+		//cin >> str >> str >> str >> str >> aretherediffs;
+		scanf("%*s %*d %*s %*s %d", &aretherediffs);
+		//fclose(stdin);
 		
 		// Out a result for test
 		if (aretherediffs){
