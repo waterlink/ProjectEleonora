@@ -23,7 +23,97 @@ arising from the use of this software.
 
 #include <iostream>
 
-string getTicket(string Part, long long Id){
+bool readticket(StudentTicket * ticket, string Part, long long Id){
+
+	string str;
+	long long x;
+	int y;
+
+	string fPart = Part;
+	long long fId = Id;
+	
+	char buff[100];
+	sprintf(buff, "./data/%s_%lld", fPart.c_str(), fId);
+	
+	string fPath = buff;
+	
+	if (!freopen(fPath.c_str(), "r", stdin)){
+	
+		printf("Ticket not found.\n");
+		return false;
+	
+	}
+	
+	getline(cin, str);
+	ticket->setUniversity(str);
+	
+	getline(cin, str);
+	ticket->setPart(str);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%lld", &x);
+	ticket->setId(x);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setIssueDateYear(y);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setIssueDateMonth(y);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setIssueDateDay(y);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setExpirationDateYear(y);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setExpirationDateMonth(y);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setExpirationDateDay(y);
+	
+	getline(cin, str);
+	ticket->setSurName(str);
+	
+	getline(cin, str);
+	ticket->setName(str);
+	
+	getline(cin, str);
+	ticket->setFatherName(str);
+	
+	getline(cin, str);
+	ticket->setFaculty(str);
+	
+	getline(cin, str);
+	ticket->setStructuredUnit(str);
+	
+	getline(cin, str);
+	ticket->setStudyType(str);
+	
+	getline(cin, str);
+	ticket->setSpecialization(str);
+	
+	getline(cin, str);
+	ticket->setGroup(str);
+	
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setEntranceYear(y);
+	
+	getline(cin, str);
+	ticket->setRectorCredentials(str);
+	
+	return true;
+
+}
+
+bool getTicket(string Part, long long Id){
 
 	string str;
 	long long x;
@@ -31,7 +121,10 @@ string getTicket(string Part, long long Id){
 
 	StudentTicket * ticket = new StudentTicket;
 	
-	string fPart = Part;
+	if (!readticket(ticket, Part, Id))
+		return false;
+	
+	/*string fPart = Part;
 	long long fId = Id;
 	
 	char buff[100];
@@ -109,7 +202,7 @@ string getTicket(string Part, long long Id){
 	ticket->setEntranceYear(y);
 	
 	getline(cin, str);
-	ticket->setRectorCredentials(str);
+	ticket->setRectorCredentials(str);*/
 	
 	printf("University %s\n", ticket->getUniversity().c_str());
 	printf("Part %s\n", ticket->getPart().c_str());
@@ -135,7 +228,7 @@ string getTicket(string Part, long long Id){
 	
 	delete ticket;
 	
-	return "";
+	return true;
 
 }
 
