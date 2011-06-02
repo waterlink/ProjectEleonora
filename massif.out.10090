@@ -1,0 +1,780 @@
+desc: (none)
+cmd: ./binary/x.elf lalcxbbxjtcxpajmuv 100009420
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1566652
+mem_heap_B=88
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=1574119
+mem_heap_B=128
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=1575969
+mem_heap_B=143
+mem_heap_extra_B=25
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=1576829
+mem_heap_B=204
+mem_heap_extra_B=60
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=1578360
+mem_heap_B=300
+mem_heap_extra_B=116
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=1581086
+mem_heap_B=331
+mem_heap_extra_B=125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1582497
+mem_heap_B=353
+mem_heap_extra_B=135
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=1590978
+mem_heap_B=401
+mem_heap_extra_B=143
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=1608383
+mem_heap_B=415
+mem_heap_extra_B=153
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=1608815
+mem_heap_B=430
+mem_heap_extra_B=162
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=1610636
+mem_heap_B=430
+mem_heap_extra_B=162
+mem_stacks_B=0
+heap_tree=detailed
+n2: 430 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 342 0x40DBD04: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.13)
+  n1: 212 0x40DDF6E: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+   n1: 212 0x40DE108: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+    n1: 212 0x40DE1AC: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+     n10: 212 0x40DE343: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.13)
+      n1: 40 0x804A3B4: StudentTicket::StudentTicket() (StudentTicket.cpp:26)
+       n0: 40 0x8048B55: main (main.cpp:32)
+      n1: 29 0x804A4E7: StudentTicket::StudentTicket() (StudentTicket.cpp:44)
+       n0: 29 0x8048B55: main (main.cpp:32)
+      n1: 22 0x804A459: StudentTicket::StudentTicket() (StudentTicket.cpp:37)
+       n0: 22 0x8048B55: main (main.cpp:32)
+      n1: 20 0x804A443: StudentTicket::StudentTicket() (StudentTicket.cpp:36)
+       n0: 20 0x8048B55: main (main.cpp:32)
+      n1: 20 0x804A46F: StudentTicket::StudentTicket() (StudentTicket.cpp:38)
+       n0: 20 0x8048B55: main (main.cpp:32)
+      n1: 19 0x804A42D: StudentTicket::StudentTicket() (StudentTicket.cpp:35)
+       n0: 19 0x8048B55: main (main.cpp:32)
+      n1: 17 0x804A4B1: StudentTicket::StudentTicket() (StudentTicket.cpp:41)
+       n0: 17 0x8048B55: main (main.cpp:32)
+      n1: 16 0x804A49B: StudentTicket::StudentTicket() (StudentTicket.cpp:40)
+       n0: 16 0x8048B55: main (main.cpp:32)
+      n1: 15 0x804A3CA: StudentTicket::StudentTicket() (StudentTicket.cpp:27)
+       n0: 15 0x8048B55: main (main.cpp:32)
+      n1: 14 0x804A4C7: StudentTicket::StudentTicket() (StudentTicket.cpp:42)
+       n0: 14 0x8048B55: main (main.cpp:32)
+  n1: 101 0x40DCB0F: ??? (in /usr/lib/libstdc++.so.6.0.13)
+   n3: 101 0x40DCCF4: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.13)
+    n0: 48 0x8048D25: main (main.cpp:76)
+    n0: 31 0x8048BC2: main (main.cpp:41)
+    n0: 22 0x8048C05: main (main.cpp:43)
+  n1: 29 0x40DC976: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+   n1: 29 0x40DD7AB: std::string::reserve(unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+    n1: 29 0x40B83B3: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/libstdc++.so.6.0.13)
+     n1: 29 0x40CEB88: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/libstdc++.so.6.0.13)
+      n0: 29 0x8048DAD: main (main.cpp:85)
+ n0: 88 0x8048B49: main (main.cpp:32)
+#-----------
+snapshot=12
+#-----------
+time=1611982
+mem_heap_B=422
+mem_heap_extra_B=154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=1613366
+mem_heap_B=430
+mem_heap_extra_B=154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=1615762
+mem_heap_B=475
+mem_heap_extra_B=165
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=1615890
+mem_heap_B=446
+mem_heap_extra_B=154
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=1620192
+mem_heap_B=406
+mem_heap_extra_B=146
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=1621669
+mem_heap_B=419
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=1622614
+mem_heap_B=421
+mem_heap_extra_B=155
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=1623960
+mem_heap_B=427
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=1625344
+mem_heap_B=435
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=1627740
+mem_heap_B=480
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=1629497
+mem_heap_B=450
+mem_heap_extra_B=158
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=1631348
+mem_heap_B=457
+mem_heap_extra_B=159
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=1632732
+mem_heap_B=465
+mem_heap_extra_B=159
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1652205
+mem_heap_B=510
+mem_heap_extra_B=170
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=1653443
+mem_heap_B=462
+mem_heap_extra_B=146
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=1655283
+mem_heap_B=479
+mem_heap_extra_B=161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1656097
+mem_heap_B=483
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1657483
+mem_heap_B=491
+mem_heap_extra_B=157
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1659443
+mem_heap_B=471
+mem_heap_extra_B=145
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=1661283
+mem_heap_B=488
+mem_heap_extra_B=160
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1662097
+mem_heap_B=492
+mem_heap_extra_B=164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=1663483
+mem_heap_B=500
+mem_heap_extra_B=156
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1664875
+mem_heap_B=478
+mem_heap_extra_B=146
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1666715
+mem_heap_B=495
+mem_heap_extra_B=161
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=1668789
+mem_heap_B=528
+mem_heap_extra_B=168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1670544
+mem_heap_B=501
+mem_heap_extra_B=155
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1672395
+mem_heap_B=508
+mem_heap_extra_B=156
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1673779
+mem_heap_B=516
+mem_heap_extra_B=156
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1675755
+mem_heap_B=529
+mem_heap_extra_B=167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=1676700
+mem_heap_B=531
+mem_heap_extra_B=165
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=1678046
+mem_heap_B=537
+mem_heap_extra_B=167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=1679154
+mem_heap_B=521
+mem_heap_extra_B=159
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1680996
+mem_heap_B=538
+mem_heap_extra_B=174
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=1681810
+mem_heap_B=542
+mem_heap_extra_B=178
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1683196
+mem_heap_B=571
+mem_heap_extra_B=189
+mem_stacks_B=0
+heap_tree=detailed
+n2: 571 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 483 0x40DBD04: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.13)
+  n1: 322 0x40DC976: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+   n1: 322 0x40DD7AB: std::string::reserve(unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+    n1: 322 0x40B83B3: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/libstdc++.so.6.0.13)
+     n10: 322 0x40CEB88: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/libstdc++.so.6.0.13)
+      n0: 50 0x8049399: main (main.cpp:137)
+      n0: 45 0x8048E1E: main (main.cpp:88)
+      n0: 45 0x80490F3: main (main.cpp:119)
+      n0: 45 0x8048DAD: main (main.cpp:85)
+      n0: 29 0x8049164: main (main.cpp:122)
+      n0: 29 0x80491D5: main (main.cpp:125)
+      n0: 29 0x8049246: main (main.cpp:128)
+      n0: 29 0x80492B7: main (main.cpp:131)
+      n0: 21 0x8049328: main (main.cpp:134)
+      n0: 0 in 1 place, below massif's threshold (01.00%)
+  n1: 101 0x40DCB0F: ??? (in /usr/lib/libstdc++.so.6.0.13)
+   n3: 101 0x40DCCF4: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.13)
+    n0: 48 0x8048D25: main (main.cpp:76)
+    n0: 31 0x8048BC2: main (main.cpp:41)
+    n0: 22 0x8048C05: main (main.cpp:43)
+  n2: 60 0x40DDF6E: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+   n1: 60 0x40DE108: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+    n1: 60 0x40DE1AC: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+     n4: 60 0x40DE343: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.13)
+      n1: 29 0x804A4E7: StudentTicket::StudentTicket() (StudentTicket.cpp:44)
+       n0: 29 0x8048B55: main (main.cpp:32)
+      n1: 17 0x804A4B1: StudentTicket::StudentTicket() (StudentTicket.cpp:41)
+       n0: 17 0x8048B55: main (main.cpp:32)
+      n1: 14 0x804A4C7: StudentTicket::StudentTicket() (StudentTicket.cpp:42)
+       n0: 14 0x8048B55: main (main.cpp:32)
+      n0: 0 in 7 places, all below massif's threshold (01.00%)
+   n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 88 0x8048B49: main (main.cpp:32)
+#-----------
+snapshot=47
+#-----------
+time=1684588
+mem_heap_B=533
+mem_heap_extra_B=155
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=1686430
+mem_heap_B=550
+mem_heap_extra_B=170
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=1688504
+mem_heap_B=583
+mem_heap_extra_B=177
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1691024
+mem_heap_B=607
+mem_heap_extra_B=177
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=1691154
+mem_heap_B=607
+mem_heap_extra_B=177
+mem_stacks_B=0
+heap_tree=detailed
+n2: 607 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 519 0x40DBD04: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.13)
+  n1: 375 0x40DC976: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+   n1: 375 0x40DD7AB: std::string::reserve(unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+    n1: 375 0x40B83B3: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/libstdc++.so.6.0.13)
+     n11: 375 0x40CEB88: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/libstdc++.so.6.0.13)
+      n0: 74 0x804940A: main (main.cpp:140)
+      n0: 45 0x80490F3: main (main.cpp:119)
+      n0: 45 0x8048DAD: main (main.cpp:85)
+      n0: 45 0x8048E1E: main (main.cpp:88)
+      n0: 29 0x8049399: main (main.cpp:137)
+      n0: 29 0x8049164: main (main.cpp:122)
+      n0: 29 0x80491D5: main (main.cpp:125)
+      n0: 29 0x8049246: main (main.cpp:128)
+      n0: 29 0x80492B7: main (main.cpp:131)
+      n0: 21 0x8049328: main (main.cpp:134)
+      n0: 0 in 1 place, below massif's threshold (01.00%)
+  n1: 101 0x40DCB0F: ??? (in /usr/lib/libstdc++.so.6.0.13)
+   n3: 101 0x40DCCF4: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.13)
+    n0: 48 0x8048D25: main (main.cpp:76)
+    n0: 31 0x8048BC2: main (main.cpp:41)
+    n0: 22 0x8048C05: main (main.cpp:43)
+  n2: 43 0x40DDF6E: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+   n1: 43 0x40DE108: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+    n1: 43 0x40DE1AC: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+     n3: 43 0x40DE343: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.13)
+      n1: 29 0x804A4E7: StudentTicket::StudentTicket() (StudentTicket.cpp:44)
+       n0: 29 0x8048B55: main (main.cpp:32)
+      n1: 14 0x804A4C7: StudentTicket::StudentTicket() (StudentTicket.cpp:42)
+       n0: 14 0x8048B55: main (main.cpp:32)
+      n0: 0 in 8 places, all below massif's threshold (01.00%)
+   n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 88 0x8048B49: main (main.cpp:32)
+#-----------
+snapshot=52
+#-----------
+time=1691694
+mem_heap_B=564
+mem_heap_extra_B=156
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=1692059
+mem_heap_B=577
+mem_heap_extra_B=167
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=1692409
+mem_heap_B=591
+mem_heap_extra_B=177
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1692906
+mem_heap_B=593
+mem_heap_extra_B=175
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1693412
+mem_heap_B=596
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=1696957
+mem_heap_B=602
+mem_heap_extra_B=190
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=1697079
+mem_heap_B=602
+mem_heap_extra_B=190
+mem_stacks_B=0
+heap_tree=detailed
+n2: 602 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 514 0x40DBD04: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.13)
+  n1: 384 0x40DC976: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+   n1: 384 0x40DD7AB: std::string::reserve(unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+    n1: 384 0x40B83B3: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/libstdc++.so.6.0.13)
+     n13: 384 0x40CEB88: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/libstdc++.so.6.0.13)
+      n0: 45 0x80490F3: main (main.cpp:119)
+      n0: 45 0x8048DAD: main (main.cpp:85)
+      n0: 45 0x804940A: main (main.cpp:140)
+      n0: 45 0x8048E1E: main (main.cpp:88)
+      n0: 29 0x8049399: main (main.cpp:137)
+      n0: 29 0x8049164: main (main.cpp:122)
+      n0: 29 0x80491D5: main (main.cpp:125)
+      n0: 29 0x8049246: main (main.cpp:128)
+      n0: 29 0x80492B7: main (main.cpp:131)
+      n0: 21 0x8049328: main (main.cpp:134)
+      n0: 21 0x80494D1: main (main.cpp:147)
+      n0: 17 0x804947B: main (main.cpp:143)
+      n0: 0 in 1 place, below massif's threshold (01.00%)
+  n1: 101 0x40DCB0F: ??? (in /usr/lib/libstdc++.so.6.0.13)
+   n3: 101 0x40DCCF4: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.13)
+    n0: 48 0x8048D25: main (main.cpp:76)
+    n0: 31 0x8048BC2: main (main.cpp:41)
+    n0: 22 0x8048C05: main (main.cpp:43)
+  n2: 29 0x40DDF6E: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+   n1: 29 0x40DE108: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+    n1: 29 0x40DE1AC: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+     n2: 29 0x40DE343: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.13)
+      n1: 29 0x804A4E7: StudentTicket::StudentTicket() (StudentTicket.cpp:44)
+       n0: 29 0x8048B55: main (main.cpp:32)
+      n0: 0 in 9 places, all below massif's threshold (01.00%)
+   n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 88 0x8048B49: main (main.cpp:32)
+#-----------
+snapshot=59
+#-----------
+time=1698339
+mem_heap_B=614
+mem_heap_extra_B=186
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=1698463
+mem_heap_B=614
+mem_heap_extra_B=186
+mem_stacks_B=0
+heap_tree=detailed
+n2: 614 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 526 0x40DBD04: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.13)
+  n1: 396 0x40DC976: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+   n1: 396 0x40DD7AB: std::string::reserve(unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+    n1: 396 0x40B83B3: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/libstdc++.so.6.0.13)
+     n12: 396 0x40CEB88: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/libstdc++.so.6.0.13)
+      n0: 50 0x80494D1: main (main.cpp:147)
+      n0: 45 0x80490F3: main (main.cpp:119)
+      n0: 45 0x8048DAD: main (main.cpp:85)
+      n0: 45 0x8048E1E: main (main.cpp:88)
+      n0: 45 0x804940A: main (main.cpp:140)
+      n0: 29 0x8049164: main (main.cpp:122)
+      n0: 29 0x80491D5: main (main.cpp:125)
+      n0: 29 0x8049246: main (main.cpp:128)
+      n0: 29 0x80492B7: main (main.cpp:131)
+      n0: 29 0x8049399: main (main.cpp:137)
+      n0: 21 0x8049328: main (main.cpp:134)
+      n0: 0 in 2 places, all below massif's threshold (01.00%)
+  n1: 101 0x40DCB0F: ??? (in /usr/lib/libstdc++.so.6.0.13)
+   n3: 101 0x40DCCF4: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.13)
+    n0: 48 0x8048D25: main (main.cpp:76)
+    n0: 31 0x8048BC2: main (main.cpp:41)
+    n0: 22 0x8048C05: main (main.cpp:43)
+  n2: 29 0x40DDF6E: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+   n1: 29 0x40DE108: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+    n1: 29 0x40DE1AC: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+     n2: 29 0x40DE343: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.13)
+      n1: 29 0x804A4E7: StudentTicket::StudentTicket() (StudentTicket.cpp:44)
+       n0: 29 0x8048B55: main (main.cpp:32)
+      n0: 0 in 9 places, all below massif's threshold (01.00%)
+   n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 88 0x8048B49: main (main.cpp:32)
+#-----------
+snapshot=61
+#-----------
+time=1700859
+mem_heap_B=638
+mem_heap_extra_B=186
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=1700989
+mem_heap_B=638
+mem_heap_extra_B=186
+mem_stacks_B=0
+heap_tree=peak
+n2: 638 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n3: 550 0x40DBD04: std::string::_Rep::_S_create(unsigned int, unsigned int, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.13)
+  n1: 420 0x40DC976: std::string::_Rep::_M_clone(std::allocator<char> const&, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+   n1: 420 0x40DD7AB: std::string::reserve(unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+    n1: 420 0x40B83B3: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (in /usr/lib/libstdc++.so.6.0.13)
+     n12: 420 0x40CEB88: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) (in /usr/lib/libstdc++.so.6.0.13)
+      n0: 74 0x80494D1: main (main.cpp:147)
+      n0: 45 0x80490F3: main (main.cpp:119)
+      n0: 45 0x8048DAD: main (main.cpp:85)
+      n0: 45 0x8048E1E: main (main.cpp:88)
+      n0: 45 0x804940A: main (main.cpp:140)
+      n0: 29 0x8049164: main (main.cpp:122)
+      n0: 29 0x80491D5: main (main.cpp:125)
+      n0: 29 0x8049246: main (main.cpp:128)
+      n0: 29 0x80492B7: main (main.cpp:131)
+      n0: 29 0x8049399: main (main.cpp:137)
+      n0: 21 0x8049328: main (main.cpp:134)
+      n0: 0 in 2 places, all below massif's threshold (01.00%)
+  n1: 101 0x40DCB0F: ??? (in /usr/lib/libstdc++.so.6.0.13)
+   n3: 101 0x40DCCF4: std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&) (in /usr/lib/libstdc++.so.6.0.13)
+    n0: 48 0x8048D25: main (main.cpp:76)
+    n0: 31 0x8048BC2: main (main.cpp:41)
+    n0: 22 0x8048C05: main (main.cpp:43)
+  n2: 29 0x40DDF6E: std::string::_M_mutate(unsigned int, unsigned int, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+   n1: 29 0x40DE108: std::string::_M_replace_safe(unsigned int, unsigned int, char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+    n1: 29 0x40DE1AC: std::string::assign(char const*, unsigned int) (in /usr/lib/libstdc++.so.6.0.13)
+     n2: 29 0x40DE343: std::string::operator=(char const*) (in /usr/lib/libstdc++.so.6.0.13)
+      n1: 29 0x804A4E7: StudentTicket::StudentTicket() (StudentTicket.cpp:44)
+       n0: 29 0x8048B55: main (main.cpp:32)
+      n0: 0 in 9 places, all below massif's threshold (01.00%)
+   n0: 0 in 1 place, below massif's threshold (01.00%)
+ n0: 88 0x8048B49: main (main.cpp:32)
+#-----------
+snapshot=63
+#-----------
+time=1701813
+mem_heap_B=580
+mem_heap_extra_B=164
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=1728081
+mem_heap_B=535
+mem_heap_extra_B=153
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=1728253
+mem_heap_B=485
+mem_heap_extra_B=131
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=1728425
+mem_heap_B=427
+mem_heap_extra_B=109
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=1728597
+mem_heap_B=369
+mem_heap_extra_B=87
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=1728769
+mem_heap_B=279
+mem_heap_extra_B=65
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=1729969
+mem_heap_B=146
+mem_heap_extra_B=46
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=1730160
+mem_heap_B=76
+mem_heap_extra_B=28
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=1730330
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

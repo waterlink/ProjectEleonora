@@ -80,7 +80,7 @@ int main (int argc, char const* argv[]){
 	for (int i = 0; i < tests.size(); ++i){
 	
 		// Get params
-		cout << tests[i] << endl;
+		//cout << tests[i] << endl;
 		if (!freopen(tests[i].c_str(), "r", stdin)){
 		
 			printf("There is no such test: %d\n", i);
@@ -95,8 +95,8 @@ int main (int argc, char const* argv[]){
 		// Run program and original
 		runcommand = binpath + " " + params + " > " + outpath;
 		runorigcommand = origpath + " " + params + " > " + origoutpath;
-		cout << runcommand << endl;
-		cout << runorigcommand << endl;
+		//cout << runcommand << endl;
+		//cout << runorigcommand << endl;
 		sys(runcommand);
 		sys(runorigcommand);
 		

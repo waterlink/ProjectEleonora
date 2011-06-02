@@ -17,9 +17,10 @@ arising from the use of this software.
 
 #include "main.hpp"
 
+#include <cstdio>
+
 #include "StudentTicket.hpp"
 
-#include <cstdio>
 #include <iostream>
 
 int main(int argc, char ** argv){
@@ -69,7 +70,7 @@ int main(int argc, char ** argv){
 	string fPart = Part;
 	long long fId = Id;
 	
-	char buff[30];
+	char buff[100];
 	sprintf(buff, "./data/%s_%lld", fPart.c_str(), fId);
 	
 	string fPath = buff;
@@ -167,6 +168,8 @@ int main(int argc, char ** argv){
 	printf("RectorCredentials %s\n", ticket->getRectorCredentials().c_str());
 	printf("Photo %s\n", "< photo sample >");
 	printf("BarCode %s\n", "< barcode sample >");
+	
+	delete ticket;
 
 	return 0;
 
