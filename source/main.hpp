@@ -92,6 +92,7 @@ public:
 	void fIdSetup(long long fId);
 	
 	bool openTicket();
+	void readAllTicketData();
 
 private:
 

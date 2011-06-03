@@ -329,10 +329,8 @@ bool TicketManager::openTicket(){
 
 }
 
-bool TicketManager::readticket(){
+void TicketManager::readAllTicketData(){
 
-	if (!openTicket()) return false;
-	
 	readUniversity();	
 	readPart();
 	readId();
@@ -352,6 +350,33 @@ bool TicketManager::readticket(){
 	readGroup();
 	readEntranceYear();
 	readRectorCredential();
+
+}
+
+bool TicketManager::readticket(){
+
+	if (!openTicket()) return false;
+	
+	readAllTicketData();
+//	readUniversity();	
+//	readPart();
+//	readId();
+//	readIssueDateYear();
+//	readIssueDateMonth();
+//	readIssueDateDay();
+//	readExpirationDateYear();
+//	readExpirationDateMonth();
+//	readExpirationDateDay();
+//	readSurName();
+//	readName();
+//	readFatherName();
+//	readFaculty();
+//	readStructuredUnit();
+//	readStudyType();
+//	readSpecialization();
+//	readGroup();
+//	readEntranceYear();
+//	readRectorCredential();
 	
 	return true;
 
