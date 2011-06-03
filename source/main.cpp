@@ -239,88 +239,24 @@ bool TicketManager::readticket(string fPart, long long fId){
 	
 	}
 	
-//	getline(cin, str);
-//	ticket->setUniversity(str);
-	readUniversity();
-	
-//	getline(cin, str);
-//	ticket->setPart(str);
+	readUniversity();	
 	readPart();
-	
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%lld", &x);
-//	ticket->setId(x);
 	readId();
-	
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
-//	ticket->setIssueDateYear(y);
 	readIssueDateYear();
-	
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
-//	ticket->setIssueDateMonth(y);
 	readIssueDateMonth();
-	
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
-//	ticket->setIssueDateDay(y);
 	readIssueDateDay();
-	
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
-//	ticket->setExpirationDateYear(y);
 	readExpirationDateYear();
-	
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
-//	ticket->setExpirationDateMonth(y);
 	readExpirationDateMonth();
-	
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
-//	ticket->setExpirationDateDay(y);
 	readExpirationDateDay();
-	
-//	getline(cin, str);
-//	ticket->setSurName(str);
 	readSurName();
-	
-//	getline(cin, str);
-//	ticket->setName(str);
 	readName();
-	
-//	getline(cin, str);
-//	ticket->setFatherName(str);
 	readFatherName();
-	
-//	getline(cin, str);
-//	ticket->setFaculty(str);
 	readFaculty();
-	
-//	getline(cin, str);
-//	ticket->setStructuredUnit(str);
 	readStructuredUnit();
-	
-//	getline(cin, str);
-//	ticket->setStudyType(str);
 	readStudyType();
-	
-//	getline(cin, str);
-//	ticket->setSpecialization(str);
 	readSpecialization();
-	
-//	getline(cin, str);
-//	ticket->setGroup(str);
 	readGroup();
-	
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
-//	ticket->setEntranceYear(y);
 	readEntranceYear();
-	
-//	getline(cin, str);
-//	ticket->setRectorCredentials(str);
 	readRectorCredential();
 	
 	return true;
