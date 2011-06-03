@@ -93,6 +93,10 @@ public:
 	
 	bool openTicket();
 	void readAllTicketData();
+	
+	StudentTicket * getTicketField();
+	string getfPart();
+	long long getfId();
 
 private:
 

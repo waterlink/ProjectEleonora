@@ -183,6 +183,22 @@ long long Reader::readLongLongLine(){
 
 }
 
+StudentTicket * TicketManager::getTicketField(){
+
+	return ticket;
+
+}
+string TicketManager::getfPart(){
+
+	return fPart;
+
+}
+long long TicketManager::getfId(){
+
+	return fId;
+
+}
+
 void TicketManager::readUniversity(){
 
 	ticket->setUniversity(Reader::readStringLine());
@@ -312,11 +328,9 @@ bool TicketManager::openTicket(){
 
 	char * buff = new char[100];
 	
-	sprintf(buff, "./data/%s_%lld", fPart.c_str(), fId);
+	sprintf(buff, "./data/%s_%lld", getfPart().c_str(), getfId());
 	
-	string fPath = buff;
-	
-	if (!freopen(fPath.c_str(), "r", stdin)){
+	if (!freopen(buff, "r", stdin)){
 	
 		printf("Ticket not found.\n");
 		return false;
@@ -365,31 +379,55 @@ bool TicketManager::getTicket(){
 
 	if (!readticket())
 		return false;
-	
 	showticket();
-	
 	return true;
+
+}
+
+string getPartFromCommandLine(int argc, char ** argv){
+
+	if (argc < 1) return "";
+	return argv[1];
+
+}
+
+long long getIdFromCommandLine(int argc, char ** argv){
+
+	if (argc < 2) return 0;
+	long long x = 0;
+	sscanf(argv[2], "%lld", &x);
+	return x;
 
 }
 
 int main(int argc, char ** argv){
 
-	string str;
-	long long x;
+//	string str;
+//	long long x;
 
-	if (argc < 2){
+//	if (argc < 2){
+//	
+//		printf("usage: x Part Id\n");
+//		return 0;
+//		
+//	}
+//	
+//	string Part = argv[1];
+//	
+//	string IdString = argv[2];
+//	sscanf(IdString.c_str(), "%lld", &x);
+//	
+//	long long Id = x;
+
+	string Part = getPartFromCommandLine(argc, argv);
+	long long Id = getIdFromCommandLine(argc, argv);
+	
+	if (Part == "" || Id == 0){
 	
 		printf("usage: x Part Id\n");
 		return 0;
 		
 	}
-	
-	string Part = argv[1];
-	
-	string IdString = argv[2];
-	sscanf(IdString.c_str(), "%lld", &x);
-	
-	long long Id = x;
 	
 	TicketManager * tm = new TicketManager;
 	
