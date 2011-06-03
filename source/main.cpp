@@ -224,9 +224,6 @@ void TicketManager::readRectorCredential(){
 
 bool TicketManager::readticket(string fPart, long long fId){
 
-	string str;
-	int y;
-	
 	char buff[100];
 	sprintf(buff, "./data/%s_%lld", fPart.c_str(), fId);
 	
