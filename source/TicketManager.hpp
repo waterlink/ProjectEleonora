@@ -60,36 +60,15 @@ private:
 
 };
 
-class TicketManager{
+class TicketPrinter{
 
 public:
 
-	TicketManager();
-	~TicketManager();
-	
-	void showticket();
-	bool readticket();
-	bool getTicket();
-	
-//	void readUniversity();
-//	void readPart();
-//	void readId();
-//	void readIssueDateYear();
-//	void readIssueDateMonth();
-//	void readIssueDateDay();
-//	void readExpirationDateYear();
-//	void readExpirationDateMonth();
-//	void readExpirationDateDay();
-//	void readSurName();
-//	void readName();
-//	void readFatherName();
-//	void readFaculty();
-//	void readStructuredUnit();
-//	void readStudyType();
-//	void readSpecialization();
-//	void readGroup();
-//	void readEntranceYear();
-//	void readRectorCredential();
+	TicketPrinter();
+	~TicketPrinter();
+
+	void SetupTicket(StudentTicket * ticket);
+	StudentTicket * getTicketField();
 	
 	void printUniversity();
 	void printPart();
@@ -113,6 +92,23 @@ public:
 	
 	void printPhoto();
 	void printBarCode();
+
+private:
+
+	StudentTicket * ticket;
+
+};
+
+class TicketManager{
+
+public:
+
+	TicketManager();
+	~TicketManager();
+	
+	void showticket();
+	bool readticket();
+	bool getTicket();
 	
 	void fPartSetup(string fPart);
 	void fIdSetup(long long fId);
@@ -124,6 +120,7 @@ public:
 	string getfPart();
 	long long getfId();
 	TicketReader * getReaderField();
+	TicketPrinter * getPrinterField();
 
 private:
 
@@ -131,6 +128,7 @@ private:
 	string fPart;
 	long long fId;
 	TicketReader * reader;
+	TicketPrinter * printer;
 
 };
 
