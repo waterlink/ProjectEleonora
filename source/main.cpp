@@ -30,97 +30,97 @@ TicketManager::~TicketManager(){
 
 void TicketManager::printUniversity(){
 
-	printf("University %s\n", ticket->getUniversity().c_str());
+	printf("University %s\n", getTicketField()->getUniversity().c_str());
 
 }
 void TicketManager::printPart(){
 
-	printf("Part %s\n", ticket->getPart().c_str());
+	printf("Part %s\n", getTicketField()->getPart().c_str());
 
 }
 void TicketManager::printId(){
 
-	printf("Id %lld\n", ticket->getId());
+	printf("Id %lld\n", getTicketField()->getId());
 
 }
 void TicketManager::printIssueDateYear(){
 
-	printf("IssueDateYear %d\n", ticket->getIssueDateYear());
+	printf("IssueDateYear %d\n", getTicketField()->getIssueDateYear());
 
 }
 void TicketManager::printIssueDateMonth(){
 
-	printf("IssueDateMonth %d\n", ticket->getIssueDateMonth());
+	printf("IssueDateMonth %d\n", getTicketField()->getIssueDateMonth());
 
 }
 void TicketManager::printIssueDateDay(){
 
-	printf("IssueDateDay %d\n", ticket->getIssueDateDay());
+	printf("IssueDateDay %d\n", getTicketField()->getIssueDateDay());
 
 }
 void TicketManager::printExpirationDateYear(){
 
-	printf("ExpirationDateYear %d\n", ticket->getExpirationDateYear());
+	printf("ExpirationDateYear %d\n", getTicketField()->getExpirationDateYear());
 
 }
 void TicketManager::printExpirationDateMonth(){
 
-	printf("ExpirationDateMonth %d\n", ticket->getExpirationDateMonth());
+	printf("ExpirationDateMonth %d\n", getTicketField()->getExpirationDateMonth());
 
 }
 void TicketManager::printExpirationDateDay(){
 
-	printf("ExpirationDateDay %d\n", ticket->getExpirationDateDay());
+	printf("ExpirationDateDay %d\n", getTicketField()->getExpirationDateDay());
 
 }
 void TicketManager::printSurName(){
 
-	printf("SurName %s\n", ticket->getSurName().c_str());
+	printf("SurName %s\n", getTicketField()->getSurName().c_str());
 
 }
 void TicketManager::printName(){
 
-	printf("Name %s\n", ticket->getName().c_str());
+	printf("Name %s\n", getTicketField()->getName().c_str());
 
 }
 void TicketManager::printFatherName(){
 
-	printf("FatherName %s\n", ticket->getFatherName().c_str());
+	printf("FatherName %s\n", getTicketField()->getFatherName().c_str());
 
 }
 void TicketManager::printFaculty(){
 
-	printf("Faculty %s\n", ticket->getFaculty().c_str());
+	printf("Faculty %s\n", getTicketField()->getFaculty().c_str());
 
 }
 void TicketManager::printStructuredUnit(){
 
-	printf("StructuredUnit %s\n", ticket->getStructuredUnit().c_str());
+	printf("StructuredUnit %s\n", getTicketField()->getStructuredUnit().c_str());
 
 }
 void TicketManager::printStudyType(){
 
-	printf("StudyType %s\n", ticket->getStudyType().c_str());
+	printf("StudyType %s\n", getTicketField()->getStudyType().c_str());
 
 }
 void TicketManager::printSpecialization(){
 
-	printf("Specialization %s\n", ticket->getSpecialization().c_str());
+	printf("Specialization %s\n", getTicketField()->getSpecialization().c_str());
 
 }
 void TicketManager::printGroup(){
 
-	printf("Group %s\n", ticket->getGroup().c_str());
+	printf("Group %s\n", getTicketField()->getGroup().c_str());
 
 }
 void TicketManager::printEntranceYear(){
 
-	printf("EntranceYear %d\n", ticket->getEntranceYear());
+	printf("EntranceYear %d\n", getTicketField()->getEntranceYear());
 
 }
 void TicketManager::printRectorCredential(){
 
-	printf("RectorCredentials %s\n", ticket->getRectorCredentials().c_str());
+	printf("RectorCredentials %s\n", getTicketField()->getRectorCredentials().c_str());
 
 }
 
@@ -201,115 +201,115 @@ long long TicketManager::getfId(){
 
 void TicketManager::readUniversity(){
 
-	ticket->setUniversity(Reader::readStringLine());
+	getTicketField()->setUniversity(Reader::readStringLine());
 
 }
 
 void TicketManager::readPart(){
 
-	ticket->setPart(Reader::readStringLine());
+	getTicketField()->setPart(Reader::readStringLine());
 
 }
 
 void TicketManager::readId(){
 
-	ticket->setId(Reader::readLongLongLine());
+	getTicketField()->setId(Reader::readLongLongLine());
 
 }
 
 void TicketManager::readIssueDateYear(){
 
-	ticket->setIssueDateYear(Reader::readIntLine());
+	getTicketField()->setIssueDateYear(Reader::readIntLine());
 
 }
 
 void TicketManager::readIssueDateMonth(){
 
-	ticket->setIssueDateMonth(Reader::readIntLine());
+	getTicketField()->setIssueDateMonth(Reader::readIntLine());
 
 }
 
 void TicketManager::readIssueDateDay(){
 
-	ticket->setIssueDateDay(Reader::readIntLine());
+	getTicketField()->setIssueDateDay(Reader::readIntLine());
 
 }
 
 void TicketManager::readExpirationDateYear(){
 
-	ticket->setExpirationDateYear(Reader::readIntLine());
+	getTicketField()->setExpirationDateYear(Reader::readIntLine());
 
 }
 
 void TicketManager::readExpirationDateMonth(){
 
-	ticket->setExpirationDateMonth(Reader::readIntLine());
+	getTicketField()->setExpirationDateMonth(Reader::readIntLine());
 
 }
 
 void TicketManager::readExpirationDateDay(){
 
-	ticket->setExpirationDateDay(Reader::readIntLine());
+	getTicketField()->setExpirationDateDay(Reader::readIntLine());
 
 }
 
 void TicketManager::readSurName(){
 
-	ticket->setSurName(Reader::readStringLine());
+	getTicketField()->setSurName(Reader::readStringLine());
 
 }
 
 void TicketManager::readName(){
 
-	ticket->setName(Reader::readStringLine());
+	getTicketField()->setName(Reader::readStringLine());
 
 }
 
 void TicketManager::readFatherName(){
 
-	ticket->setFatherName(Reader::readStringLine());
+	getTicketField()->setFatherName(Reader::readStringLine());
 
 }
 
 void TicketManager::readFaculty(){
 
-	ticket->setFaculty(Reader::readStringLine());
+	getTicketField()->setFaculty(Reader::readStringLine());
 
 }
 
 void TicketManager::readStructuredUnit(){
 
-	ticket->setStructuredUnit(Reader::readStringLine());
+	getTicketField()->setStructuredUnit(Reader::readStringLine());
 
 }
 
 void TicketManager::readStudyType(){
 
-	ticket->setStudyType(Reader::readStringLine());
+	getTicketField()->setStudyType(Reader::readStringLine());
 
 }
 
 void TicketManager::readSpecialization(){
 
-	ticket->setSpecialization(Reader::readStringLine());
+	getTicketField()->setSpecialization(Reader::readStringLine());
 
 }
 
 void TicketManager::readGroup(){
 
-	ticket->setGroup(Reader::readStringLine());
+	getTicketField()->setGroup(Reader::readStringLine());
 
 }
 
 void TicketManager::readEntranceYear(){
 
-	ticket->setEntranceYear(Reader::readIntLine());
+	getTicketField()->setEntranceYear(Reader::readIntLine());
 
 }
 
 void TicketManager::readRectorCredential(){
 
-	ticket->setRectorCredentials(Reader::readStringLine());
+	getTicketField()->setRectorCredentials(Reader::readStringLine());
 
 }
 
@@ -327,9 +327,8 @@ void TicketManager::fIdSetup(long long fId){
 bool TicketManager::openTicket(){
 
 	char * buff = new char[100];
-	
-	sprintf(buff, "./data/%s_%lld", getfPart().c_str(), getfId());
-	
+		
+	sprintf(buff, "./data/%s_%lld", getfPart().c_str(), getfId());	
 	if (!freopen(buff, "r", stdin)){
 	
 		printf("Ticket not found.\n");
@@ -337,8 +336,7 @@ bool TicketManager::openTicket(){
 	
 	}
 	
-	delete buff;
-	
+	delete buff;	
 	return true;
 
 }
@@ -401,23 +399,6 @@ long long getIdFromCommandLine(int argc, char ** argv){
 }
 
 int main(int argc, char ** argv){
-
-//	string str;
-//	long long x;
-
-//	if (argc < 2){
-//	
-//		printf("usage: x Part Id\n");
-//		return 0;
-//		
-//	}
-//	
-//	string Part = argv[1];
-//	
-//	string IdString = argv[2];
-//	sscanf(IdString.c_str(), "%lld", &x);
-//	
-//	long long Id = x;
 
 	string Part = getPartFromCommandLine(argc, argv);
 	long long Id = getIdFromCommandLine(argc, argv);
