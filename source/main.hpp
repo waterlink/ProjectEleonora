@@ -37,6 +37,16 @@ public:
 	
 	void readUniversity();
 	void readPart();
+	void readId();
+	void readIssueDateYear();
+	void readIssueDateMonth();
+	void readIssueDateDay();
+	void readExpirationDateYear();
+	void readExpirationDateMonth();
+	void readExpirationDateDay();
+	void readSurName();
+	void readName();
+	void readFatherName();
 
 private:
 

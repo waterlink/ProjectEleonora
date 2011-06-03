@@ -70,10 +70,103 @@ void TicketManager::readPart(){
 
 }
 
+void TicketManager::readId(){
+
+	long long x;
+	string str;
+	getline(cin, str);
+	sscanf(str.c_str(), "%lld", &x);
+	ticket->setId(x);
+
+}
+
+void TicketManager::readIssueDateYear(){
+
+	int y;
+	string str;
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setIssueDateYear(y);
+
+}
+
+void TicketManager::readIssueDateMonth(){
+
+	int y;
+	string str;
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setIssueDateMonth(y);
+
+}
+
+void TicketManager::readIssueDateDay(){
+
+	int y;
+	string str;
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setIssueDateDay(y);
+
+}
+
+void TicketManager::readExpirationDateYear(){
+
+	int y;
+	string str;
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setExpirationDateYear(y);
+
+}
+
+void TicketManager::readExpirationDateMonth(){
+
+	int y;
+	string str;
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setExpirationDateMonth(y);
+
+}
+
+void TicketManager::readExpirationDateDay(){
+
+	int y;
+	string str;
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setExpirationDateDay(y);
+
+}
+
+void TicketManager::readSurName(){
+
+	string str;
+	getline(cin, str);
+	ticket->setSurName(str);
+
+}
+
+void TicketManager::readName(){
+
+	string str;
+	getline(cin, str);
+	ticket->setName(str);
+
+}
+
+void TicketManager::readFatherName(){
+
+	string str;
+	getline(cin, str);
+	ticket->setFatherName(str);
+
+}
+
 bool TicketManager::readticket(string fPart, long long fId){
 
 	string str;
-	long long x;
 	int y;
 	
 	char buff[100];
@@ -96,42 +189,52 @@ bool TicketManager::readticket(string fPart, long long fId){
 //	ticket->setPart(str);
 	readPart();
 	
-	getline(cin, str);
-	sscanf(str.c_str(), "%lld", &x);
-	ticket->setId(x);
+//	getline(cin, str);
+//	sscanf(str.c_str(), "%lld", &x);
+//	ticket->setId(x);
+	readId();
 	
-	getline(cin, str);
-	sscanf(str.c_str(), "%d", &y);
-	ticket->setIssueDateYear(y);
+//	getline(cin, str);
+//	sscanf(str.c_str(), "%d", &y);
+//	ticket->setIssueDateYear(y);
+	readIssueDateYear();
 	
-	getline(cin, str);
-	sscanf(str.c_str(), "%d", &y);
-	ticket->setIssueDateMonth(y);
+//	getline(cin, str);
+//	sscanf(str.c_str(), "%d", &y);
+//	ticket->setIssueDateMonth(y);
+	readIssueDateMonth();
 	
-	getline(cin, str);
-	sscanf(str.c_str(), "%d", &y);
-	ticket->setIssueDateDay(y);
+//	getline(cin, str);
+//	sscanf(str.c_str(), "%d", &y);
+//	ticket->setIssueDateDay(y);
+	readIssueDateDay();
 	
-	getline(cin, str);
-	sscanf(str.c_str(), "%d", &y);
-	ticket->setExpirationDateYear(y);
+//	getline(cin, str);
+//	sscanf(str.c_str(), "%d", &y);
+//	ticket->setExpirationDateYear(y);
+	readExpirationDateYear();
 	
-	getline(cin, str);
-	sscanf(str.c_str(), "%d", &y);
-	ticket->setExpirationDateMonth(y);
+//	getline(cin, str);
+//	sscanf(str.c_str(), "%d", &y);
+//	ticket->setExpirationDateMonth(y);
+	readExpirationDateMonth();
 	
-	getline(cin, str);
-	sscanf(str.c_str(), "%d", &y);
-	ticket->setExpirationDateDay(y);
+//	getline(cin, str);
+//	sscanf(str.c_str(), "%d", &y);
+//	ticket->setExpirationDateDay(y);
+	readExpirationDateDay();
 	
-	getline(cin, str);
-	ticket->setSurName(str);
+//	getline(cin, str);
+//	ticket->setSurName(str);
+	readSurName();
 	
-	getline(cin, str);
-	ticket->setName(str);
+//	getline(cin, str);
+//	ticket->setName(str);
+	readName();
 	
-	getline(cin, str);
-	ticket->setFatherName(str);
+//	getline(cin, str);
+//	ticket->setFatherName(str);
+	readFatherName();
 	
 	getline(cin, str);
 	ticket->setFaculty(str);
