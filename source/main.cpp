@@ -297,9 +297,21 @@ void TicketManager::readRectorCredential(){
 
 }
 
-bool TicketManager::readticket(string fPart, long long fId){
+void TicketManager::fPartSetup(string fPart){
 
-	char buff[100];
+	this->fPart = fPart;
+
+}
+void TicketManager::fIdSetup(long long fId){
+
+	this->fId = fId;
+
+}
+
+bool TicketManager::openTicket(){
+
+	char * buff = new char[100];
+	
 	sprintf(buff, "./data/%s_%lld", fPart.c_str(), fId);
 	
 	string fPath = buff;
@@ -310,6 +322,16 @@ bool TicketManager::readticket(string fPart, long long fId){
 		return false;
 	
 	}
+	
+	delete buff;
+	
+	return true;
+
+}
+
+bool TicketManager::readticket(){
+
+	if (!openTicket()) return false;
 	
 	readUniversity();	
 	readPart();
@@ -335,9 +357,9 @@ bool TicketManager::readticket(string fPart, long long fId){
 
 }
 
-bool TicketManager::getTicket(string Part, long long Id){
+bool TicketManager::getTicket(){
 
-	if (!readticket(Part, Id))
+	if (!readticket())
 		return false;
 	
 	showticket();
@@ -367,7 +389,9 @@ int main(int argc, char ** argv){
 	
 	TicketManager * tm = new TicketManager;
 	
-	tm->getTicket(Part, Id);
+	tm->fPartSetup(Part);
+	tm->fIdSetup(Id);
+	tm->getTicket();
 	
 	delete tm;
 

@@ -42,8 +42,8 @@ public:
 	~TicketManager();
 	
 	void showticket();
-	bool readticket(string Part, long long Id);
-	bool getTicket(string Part, long long Id);
+	bool readticket();
+	bool getTicket();
 	
 	void readUniversity();
 	void readPart();
@@ -87,10 +87,17 @@ public:
 	
 	void printPhoto();
 	void printBarCode();
+	
+	void fPartSetup(string fPart);
+	void fIdSetup(long long fId);
+	
+	bool openTicket();
 
 private:
 
 	StudentTicket * ticket;
+	string fPart;
+	long long fId;
 
 };
 
