@@ -62,6 +62,14 @@ void TicketManager::readUniversity(){
 
 }
 
+void TicketManager::readPart(){
+
+	string str;
+	getline(cin, str);
+	ticket->setPart(str);
+
+}
+
 bool TicketManager::readticket(string fPart, long long fId){
 
 	string str;
@@ -84,8 +92,9 @@ bool TicketManager::readticket(string fPart, long long fId){
 //	ticket->setUniversity(str);
 	readUniversity();
 	
-	getline(cin, str);
-	ticket->setPart(str);
+//	getline(cin, str);
+//	ticket->setPart(str);
+	readPart();
 	
 	getline(cin, str);
 	sscanf(str.c_str(), "%lld", &x);
