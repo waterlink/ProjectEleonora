@@ -24,6 +24,42 @@ header*/
 
 #include <iostream>
 
+class TicketReader{
+
+public:
+
+	TicketReader();
+	~TicketReader();
+	
+	void SetupTicket(StudentTicket * ticket);
+	StudentTicket * getStudentTicketField();
+	
+	void readUniversity();
+	void readPart();
+	void readId();
+	void readIssueDateYear();
+	void readIssueDateMonth();
+	void readIssueDateDay();
+	void readExpirationDateYear();
+	void readExpirationDateMonth();
+	void readExpirationDateDay();
+	void readSurName();
+	void readName();
+	void readFatherName();
+	void readFaculty();
+	void readStructuredUnit();
+	void readStudyType();
+	void readSpecialization();
+	void readGroup();
+	void readEntranceYear();
+	void readRectorCredential();
+
+private:
+
+	StudentTicket * ticket;
+
+};
+
 class TicketManager{
 
 public:

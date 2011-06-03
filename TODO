@@ -27,6 +27,10 @@
 	
 3) future functionality:
 	- show photo
+		- refactoring first
+			- TicketManager has too much responsibilities, extract classes from him
+				- it manages reading - rid of it - TicketReader
+				- it manages printing - rid of it - TickerPrinter
 	- scan and compare barcode
 	
 4) application input:
