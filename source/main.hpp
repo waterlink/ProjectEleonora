@@ -47,6 +47,13 @@ public:
 	void readSurName();
 	void readName();
 	void readFatherName();
+	void readFaculty();
+	void readStructuredUnit();
+	void readStudyType();
+	void readSpecialization();
+	void readGroup();
+	void readEntranceYear();
+	void readRectorCredential();
 
 private:
 

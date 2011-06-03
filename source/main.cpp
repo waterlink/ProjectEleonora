@@ -164,6 +164,64 @@ void TicketManager::readFatherName(){
 
 }
 
+void TicketManager::readFaculty(){
+
+	string str;
+	getline(cin, str);
+	ticket->setFaculty(str);
+
+}
+
+void TicketManager::readStructuredUnit(){
+
+	string str;
+	getline(cin, str);
+	ticket->setStructuredUnit(str);
+
+}
+
+void TicketManager::readStudyType(){
+
+	string str;
+	getline(cin, str);
+	ticket->setStudyType(str);
+
+}
+
+void TicketManager::readSpecialization(){
+
+	string str;
+	getline(cin, str);
+	ticket->setSpecialization(str);
+
+}
+
+void TicketManager::readGroup(){
+
+	string str;
+	getline(cin, str);
+	ticket->setGroup(str);
+
+}
+
+void TicketManager::readEntranceYear(){
+
+	int y;
+	string str;
+	getline(cin, str);
+	sscanf(str.c_str(), "%d", &y);
+	ticket->setEntranceYear(y);
+
+}
+
+void TicketManager::readRectorCredential(){
+
+	string str;
+	getline(cin, str);
+	ticket->setRectorCredentials(str);
+
+}
+
 bool TicketManager::readticket(string fPart, long long fId){
 
 	string str;
@@ -236,27 +294,34 @@ bool TicketManager::readticket(string fPart, long long fId){
 //	ticket->setFatherName(str);
 	readFatherName();
 	
-	getline(cin, str);
-	ticket->setFaculty(str);
+//	getline(cin, str);
+//	ticket->setFaculty(str);
+	readFaculty();
 	
-	getline(cin, str);
-	ticket->setStructuredUnit(str);
+//	getline(cin, str);
+//	ticket->setStructuredUnit(str);
+	readStructuredUnit();
 	
-	getline(cin, str);
-	ticket->setStudyType(str);
+//	getline(cin, str);
+//	ticket->setStudyType(str);
+	readStudyType();
 	
-	getline(cin, str);
-	ticket->setSpecialization(str);
+//	getline(cin, str);
+//	ticket->setSpecialization(str);
+	readSpecialization();
 	
-	getline(cin, str);
-	ticket->setGroup(str);
+//	getline(cin, str);
+//	ticket->setGroup(str);
+	readGroup();
 	
-	getline(cin, str);
-	sscanf(str.c_str(), "%d", &y);
-	ticket->setEntranceYear(y);
+//	getline(cin, str);
+//	sscanf(str.c_str(), "%d", &y);
+//	ticket->setEntranceYear(y);
+	readEntranceYear();
 	
-	getline(cin, str);
-	ticket->setRectorCredentials(str);
+//	getline(cin, str);
+//	ticket->setRectorCredentials(str);
+	readRectorCredential();
 	
 	return true;
 
