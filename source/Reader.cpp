@@ -12,15 +12,30 @@ warranty. In no event will the authors be held liable for any damages
 arising from the use of this software.
 */
 
-/*header main
-*/
+/*class Reader
+source*/
 
-#ifndef __main_H__
-#define __main_H__
+#include "Reader.hpp"
 
-#include <cstdio>
-#include <iostream>
+string Reader::readStringLine(){
 
-#endif /* __main_H__ */
+	string str;
+	getline(cin, str);
+	return str;
 
+}
+int Reader::readIntLine(){
+
+	int y;
+	sscanf(Reader::readStringLine().c_str(), "%d", &y);
+	return y;
+
+}
+long long Reader::readLongLongLine(){
+
+	long long x;
+	sscanf(Reader::readStringLine().c_str(), "%lld", &x);
+	return x;
+
+}
 

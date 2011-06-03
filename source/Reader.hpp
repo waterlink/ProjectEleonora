@@ -12,15 +12,27 @@ warranty. In no event will the authors be held liable for any damages
 arising from the use of this software.
 */
 
-/*header main
-*/
+/*class Reader
+header*/
 
-#ifndef __main_H__
-#define __main_H__
+#ifndef __Reader_H__
+#define __Reader_H__
 
 #include <cstdio>
+#include <string>
 #include <iostream>
 
-#endif /* __main_H__ */
+using namespace std;
 
+class Reader{
+
+public:
+
+	static string readStringLine();
+	static int readIntLine();
+	static long long readLongLongLine();
+
+};
+
+#endif /* __Reader_H__ */
 
