@@ -21,11 +21,14 @@ source*/
 TicketManager::TicketManager(){
 
 	ticket = new StudentTicket;
+	reader = new TicketReader;
+	reader->SetupTicket(ticket);
 
 }
 TicketManager::~TicketManager(){
 
 	delete ticket;
+	delete reader;
 
 }
 
@@ -178,119 +181,119 @@ long long TicketManager::getfId(){
 
 }
 
-void TicketManager::readUniversity(){
+//void TicketManager::readUniversity(){
 
-	getTicketField()->setUniversity(Reader::readStringLine());
+//	getTicketField()->setUniversity(Reader::readStringLine());
 
-}
+//}
 
-void TicketManager::readPart(){
+//void TicketManager::readPart(){
 
-	getTicketField()->setPart(Reader::readStringLine());
+//	getTicketField()->setPart(Reader::readStringLine());
 
-}
+//}
 
-void TicketManager::readId(){
+//void TicketManager::readId(){
 
-	getTicketField()->setId(Reader::readLongLongLine());
+//	getTicketField()->setId(Reader::readLongLongLine());
 
-}
+//}
 
-void TicketManager::readIssueDateYear(){
+//void TicketManager::readIssueDateYear(){
 
-	getTicketField()->setIssueDateYear(Reader::readIntLine());
+//	getTicketField()->setIssueDateYear(Reader::readIntLine());
 
-}
+//}
 
-void TicketManager::readIssueDateMonth(){
+//void TicketManager::readIssueDateMonth(){
 
-	getTicketField()->setIssueDateMonth(Reader::readIntLine());
+//	getTicketField()->setIssueDateMonth(Reader::readIntLine());
 
-}
+//}
 
-void TicketManager::readIssueDateDay(){
+//void TicketManager::readIssueDateDay(){
 
-	getTicketField()->setIssueDateDay(Reader::readIntLine());
+//	getTicketField()->setIssueDateDay(Reader::readIntLine());
 
-}
+//}
 
-void TicketManager::readExpirationDateYear(){
+//void TicketManager::readExpirationDateYear(){
 
-	getTicketField()->setExpirationDateYear(Reader::readIntLine());
+//	getTicketField()->setExpirationDateYear(Reader::readIntLine());
 
-}
+//}
 
-void TicketManager::readExpirationDateMonth(){
+//void TicketManager::readExpirationDateMonth(){
 
-	getTicketField()->setExpirationDateMonth(Reader::readIntLine());
+//	getTicketField()->setExpirationDateMonth(Reader::readIntLine());
 
-}
+//}
 
-void TicketManager::readExpirationDateDay(){
+//void TicketManager::readExpirationDateDay(){
 
-	getTicketField()->setExpirationDateDay(Reader::readIntLine());
+//	getTicketField()->setExpirationDateDay(Reader::readIntLine());
 
-}
+//}
 
-void TicketManager::readSurName(){
+//void TicketManager::readSurName(){
 
-	getTicketField()->setSurName(Reader::readStringLine());
+//	getTicketField()->setSurName(Reader::readStringLine());
 
-}
+//}
 
-void TicketManager::readName(){
+//void TicketManager::readName(){
 
-	getTicketField()->setName(Reader::readStringLine());
+//	getTicketField()->setName(Reader::readStringLine());
 
-}
+//}
 
-void TicketManager::readFatherName(){
+//void TicketManager::readFatherName(){
 
-	getTicketField()->setFatherName(Reader::readStringLine());
+//	getTicketField()->setFatherName(Reader::readStringLine());
 
-}
+//}
 
-void TicketManager::readFaculty(){
+//void TicketManager::readFaculty(){
 
-	getTicketField()->setFaculty(Reader::readStringLine());
+//	getTicketField()->setFaculty(Reader::readStringLine());
 
-}
+//}
 
-void TicketManager::readStructuredUnit(){
+//void TicketManager::readStructuredUnit(){
 
-	getTicketField()->setStructuredUnit(Reader::readStringLine());
+//	getTicketField()->setStructuredUnit(Reader::readStringLine());
 
-}
+//}
 
-void TicketManager::readStudyType(){
+//void TicketManager::readStudyType(){
 
-	getTicketField()->setStudyType(Reader::readStringLine());
+//	getTicketField()->setStudyType(Reader::readStringLine());
 
-}
+//}
 
-void TicketManager::readSpecialization(){
+//void TicketManager::readSpecialization(){
 
-	getTicketField()->setSpecialization(Reader::readStringLine());
+//	getTicketField()->setSpecialization(Reader::readStringLine());
 
-}
+//}
 
-void TicketManager::readGroup(){
+//void TicketManager::readGroup(){
 
-	getTicketField()->setGroup(Reader::readStringLine());
+//	getTicketField()->setGroup(Reader::readStringLine());
 
-}
+//}
 
-void TicketManager::readEntranceYear(){
+//void TicketManager::readEntranceYear(){
 
-	getTicketField()->setEntranceYear(Reader::readIntLine());
+//	getTicketField()->setEntranceYear(Reader::readIntLine());
 
-}
+//}
 
-void TicketManager::readRectorCredential(){
+//void TicketManager::readRectorCredential(){
 
-	getTicketField()->setRectorCredentials(Reader::readStringLine());
+//	getTicketField()->setRectorCredentials(Reader::readStringLine());
 
-}
+//}
 
 void TicketManager::fPartSetup(string fPart){
 
@@ -322,25 +325,25 @@ bool TicketManager::openTicket(){
 
 void TicketManager::readAllTicketData(){
 
-	readUniversity();	
-	readPart();
-	readId();
-	readIssueDateYear();
-	readIssueDateMonth();
-	readIssueDateDay();
-	readExpirationDateYear();
-	readExpirationDateMonth();
-	readExpirationDateDay();
-	readSurName();
-	readName();
-	readFatherName();
-	readFaculty();
-	readStructuredUnit();
-	readStudyType();
-	readSpecialization();
-	readGroup();
-	readEntranceYear();
-	readRectorCredential();
+	getReaderField()->readUniversity();
+	getReaderField()->readPart();
+	getReaderField()->readId();
+	getReaderField()->readIssueDateYear();
+	getReaderField()->readIssueDateMonth();
+	getReaderField()->readIssueDateDay();
+	getReaderField()->readExpirationDateYear();
+	getReaderField()->readExpirationDateMonth();
+	getReaderField()->readExpirationDateDay();
+	getReaderField()->readSurName();
+	getReaderField()->readName();
+	getReaderField()->readFatherName();
+	getReaderField()->readFaculty();
+	getReaderField()->readStructuredUnit();
+	getReaderField()->readStudyType();
+	getReaderField()->readSpecialization();
+	getReaderField()->readGroup();
+	getReaderField()->readEntranceYear();
+	getReaderField()->readRectorCredential();
 
 }
 
@@ -358,6 +361,12 @@ bool TicketManager::getTicket(){
 		return false;
 	showticket();
 	return true;
+
+}
+
+TicketReader * TicketManager::getReaderField(){
+
+	return reader;
 
 }
 
@@ -486,7 +495,7 @@ void TicketReader::SetupTicket(StudentTicket * ticket){
 	this->ticket = ticket;
 
 }
-StudentTicket * TicketReader::getStudentTicketField(){
+StudentTicket * TicketReader::getTicketField(){
 
 	return ticket;
 

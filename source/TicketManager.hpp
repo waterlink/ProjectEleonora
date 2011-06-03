@@ -32,7 +32,7 @@ public:
 	~TicketReader();
 	
 	void SetupTicket(StudentTicket * ticket);
-	StudentTicket * getStudentTicketField();
+	StudentTicket * getTicketField();
 	
 	void readUniversity();
 	void readPart();
@@ -71,25 +71,25 @@ public:
 	bool readticket();
 	bool getTicket();
 	
-	void readUniversity();
-	void readPart();
-	void readId();
-	void readIssueDateYear();
-	void readIssueDateMonth();
-	void readIssueDateDay();
-	void readExpirationDateYear();
-	void readExpirationDateMonth();
-	void readExpirationDateDay();
-	void readSurName();
-	void readName();
-	void readFatherName();
-	void readFaculty();
-	void readStructuredUnit();
-	void readStudyType();
-	void readSpecialization();
-	void readGroup();
-	void readEntranceYear();
-	void readRectorCredential();
+//	void readUniversity();
+//	void readPart();
+//	void readId();
+//	void readIssueDateYear();
+//	void readIssueDateMonth();
+//	void readIssueDateDay();
+//	void readExpirationDateYear();
+//	void readExpirationDateMonth();
+//	void readExpirationDateDay();
+//	void readSurName();
+//	void readName();
+//	void readFatherName();
+//	void readFaculty();
+//	void readStructuredUnit();
+//	void readStudyType();
+//	void readSpecialization();
+//	void readGroup();
+//	void readEntranceYear();
+//	void readRectorCredential();
 	
 	void printUniversity();
 	void printPart();
@@ -123,12 +123,14 @@ public:
 	StudentTicket * getTicketField();
 	string getfPart();
 	long long getfId();
+	TicketReader * getReaderField();
 
 private:
 
 	StudentTicket * ticket;
 	string fPart;
 	long long fId;
+	TicketReader * reader;
 
 };
 
