@@ -54,6 +54,29 @@ public:
 	void readGroup();
 	void readEntranceYear();
 	void readRectorCredential();
+	
+	void printUniversity();
+	void printPart();
+	void printId();
+	void printIssueDateYear();
+	void printIssueDateMonth();
+	void printIssueDateDay();
+	void printExpirationDateYear();
+	void printExpirationDateMonth();
+	void printExpirationDateDay();
+	void printSurName();
+	void printName();
+	void printFatherName();
+	void printFaculty();
+	void printStructuredUnit();
+	void printStudyType();
+	void printSpecialization();
+	void printGroup();
+	void printEntranceYear();
+	void printRectorCredential();
+	
+	void printPhoto();
+	void printBarCode();
 
 private:
 

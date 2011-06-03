@@ -28,29 +28,157 @@ TicketManager::~TicketManager(){
 
 }
 
-void TicketManager::showticket(){
+void TicketManager::printUniversity(){
 
 	printf("University %s\n", ticket->getUniversity().c_str());
+
+}
+void TicketManager::printPart(){
+
 	printf("Part %s\n", ticket->getPart().c_str());
+
+}
+void TicketManager::printId(){
+
 	printf("Id %lld\n", ticket->getId());
+
+}
+void TicketManager::printIssueDateYear(){
+
 	printf("IssueDateYear %d\n", ticket->getIssueDateYear());
+
+}
+void TicketManager::printIssueDateMonth(){
+
 	printf("IssueDateMonth %d\n", ticket->getIssueDateMonth());
+
+}
+void TicketManager::printIssueDateDay(){
+
 	printf("IssueDateDay %d\n", ticket->getIssueDateDay());
+
+}
+void TicketManager::printExpirationDateYear(){
+
 	printf("ExpirationDateYear %d\n", ticket->getExpirationDateYear());
+
+}
+void TicketManager::printExpirationDateMonth(){
+
 	printf("ExpirationDateMonth %d\n", ticket->getExpirationDateMonth());
+
+}
+void TicketManager::printExpirationDateDay(){
+
 	printf("ExpirationDateDay %d\n", ticket->getExpirationDateDay());
+
+}
+void TicketManager::printSurName(){
+
 	printf("SurName %s\n", ticket->getSurName().c_str());
+
+}
+void TicketManager::printName(){
+
 	printf("Name %s\n", ticket->getName().c_str());
+
+}
+void TicketManager::printFatherName(){
+
 	printf("FatherName %s\n", ticket->getFatherName().c_str());
+
+}
+void TicketManager::printFaculty(){
+
 	printf("Faculty %s\n", ticket->getFaculty().c_str());
+
+}
+void TicketManager::printStructuredUnit(){
+
 	printf("StructuredUnit %s\n", ticket->getStructuredUnit().c_str());
+
+}
+void TicketManager::printStudyType(){
+
 	printf("StudyType %s\n", ticket->getStudyType().c_str());
+
+}
+void TicketManager::printSpecialization(){
+
 	printf("Specialization %s\n", ticket->getSpecialization().c_str());
+
+}
+void TicketManager::printGroup(){
+
 	printf("Group %s\n", ticket->getGroup().c_str());
+
+}
+void TicketManager::printEntranceYear(){
+
 	printf("EntranceYear %d\n", ticket->getEntranceYear());
+
+}
+void TicketManager::printRectorCredential(){
+
 	printf("RectorCredentials %s\n", ticket->getRectorCredentials().c_str());
+
+}
+
+void TicketManager::printPhoto(){
+
 	printf("Photo %s\n", "< photo sample >");
+
+}
+void TicketManager::printBarCode(){
+
 	printf("BarCode %s\n", "< barcode sample >");
+
+}
+
+void TicketManager::showticket(){
+
+//	printf("University %s\n", ticket->getUniversity().c_str());
+	printUniversity();
+//	printf("Part %s\n", ticket->getPart().c_str());
+	printPart();
+//	printf("Id %lld\n", ticket->getId());
+	printId();
+//	printf("IssueDateYear %d\n", ticket->getIssueDateYear());
+	printIssueDateYear();
+//	printf("IssueDateMonth %d\n", ticket->getIssueDateMonth());
+	printIssueDateMonth();
+//	printf("IssueDateDay %d\n", ticket->getIssueDateDay());
+	printIssueDateDay();
+//	printf("ExpirationDateYear %d\n", ticket->getExpirationDateYear());
+	printExpirationDateYear();
+//	printf("ExpirationDateMonth %d\n", ticket->getExpirationDateMonth());
+	printExpirationDateMonth();
+//	printf("ExpirationDateDay %d\n", ticket->getExpirationDateDay());
+	printExpirationDateDay();
+//	printf("SurName %s\n", ticket->getSurName().c_str());
+	printSurName();
+//	printf("Name %s\n", ticket->getName().c_str());
+	printName();
+//	printf("FatherName %s\n", ticket->getFatherName().c_str());
+	printFatherName();
+//	printf("Faculty %s\n", ticket->getFaculty().c_str());
+	printFaculty();
+//	printf("StructuredUnit %s\n", ticket->getStructuredUnit().c_str());
+	printStructuredUnit();
+//	printf("StudyType %s\n", ticket->getStudyType().c_str());
+	printStudyType();
+//	printf("Specialization %s\n", ticket->getSpecialization().c_str());
+	printSpecialization();
+//	printf("Group %s\n", ticket->getGroup().c_str());
+	printGroup();
+//	printf("EntranceYear %d\n", ticket->getEntranceYear());
+	printEntranceYear();
+//	printf("RectorCredentials %s\n", ticket->getRectorCredentials().c_str());
+	printRectorCredential();
+//	printf("Photo %s\n", "< photo sample >");
+	printPhoto();
+//	printf("BarCode %s\n", "< barcode sample >");
+	printBarCode();
 
 }
 
