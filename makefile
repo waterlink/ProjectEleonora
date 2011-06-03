@@ -1,8 +1,8 @@
 FLAGS=-Wall
 DEBUG=-g -O0 -fno-inline
 all: ./binary/x.elf
-./binary/x.elf: ./objects/main.o ./objects/StudentTicket.o ./objects/TicketManager.o ./objects/Reader.o
-	g++ ./objects/main.o ./objects/StudentTicket.o ./objects/TicketManager.o ./objects/Reader.o -o ./binary/x.elf $(DEBUG) $(FLAGS)
+./binary/x.elf: ./objects/main.o ./objects/StudentTicket.o ./objects/TicketManager.o ./objects/Reader.o ./objects/TicketReader.o ./objects/TicketPrinter.o
+	g++ ./objects/main.o ./objects/StudentTicket.o ./objects/TicketManager.o ./objects/Reader.o ./objects/TicketReader.o ./objects/TicketPrinter.o -o ./binary/x.elf $(DEBUG) $(FLAGS)
 ./objects/main.o: ./source/main.hpp ./source/main.cpp
 	g++ ./source/main.cpp -c -o ./objects/main.o $(DEBUG) $(FLAGS)
 ./objects/StudentTicket.o: ./source/StudentTicket.hpp ./source/StudentTicket.cpp
@@ -11,6 +11,10 @@ all: ./binary/x.elf
 	g++ ./source/TicketManager.cpp -c -o ./objects/TicketManager.o $(DEBUG) $(FLAGS)
 ./objects/Reader.o: ./source/Reader.hpp ./source/Reader.cpp
 	g++ ./source/Reader.cpp -c -o ./objects/Reader.o $(DEBUG) $(FLAGS)
+./objects/TicketReader.o: ./source/TicketReader.hpp ./source/TicketReader.cpp
+	g++ ./source/TicketReader.cpp -c -o ./objects/TicketReader.o $(DEBUG) $(FLAGS)
+./objects/TicketPrinter.o: ./source/TicketPrinter.hpp ./source/TicketPrinter.cpp
+	g++ ./source/TicketPrinter.cpp -c -o ./objects/TicketPrinter.o $(DEBUG) $(FLAGS)
 	
 test: ./test/test.elf ./test/gen.elf
 ./test/test.elf: ./objects/Test_main.o

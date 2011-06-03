@@ -21,83 +21,10 @@ header*/
 #include <cstdio>
 
 #include "StudentTicket.hpp"
+#include "TicketReader.hpp"
+#include "TicketPrinter.hpp"
 
 #include <iostream>
-
-class TicketReader{
-
-public:
-
-	TicketReader();
-	~TicketReader();
-	
-	void SetupTicket(StudentTicket * ticket);
-	StudentTicket * getTicketField();
-	
-	void readUniversity();
-	void readPart();
-	void readId();
-	void readIssueDateYear();
-	void readIssueDateMonth();
-	void readIssueDateDay();
-	void readExpirationDateYear();
-	void readExpirationDateMonth();
-	void readExpirationDateDay();
-	void readSurName();
-	void readName();
-	void readFatherName();
-	void readFaculty();
-	void readStructuredUnit();
-	void readStudyType();
-	void readSpecialization();
-	void readGroup();
-	void readEntranceYear();
-	void readRectorCredential();
-
-private:
-
-	StudentTicket * ticket;
-
-};
-
-class TicketPrinter{
-
-public:
-
-	TicketPrinter();
-	~TicketPrinter();
-
-	void SetupTicket(StudentTicket * ticket);
-	StudentTicket * getTicketField();
-	
-	void printUniversity();
-	void printPart();
-	void printId();
-	void printIssueDateYear();
-	void printIssueDateMonth();
-	void printIssueDateDay();
-	void printExpirationDateYear();
-	void printExpirationDateMonth();
-	void printExpirationDateDay();
-	void printSurName();
-	void printName();
-	void printFatherName();
-	void printFaculty();
-	void printStructuredUnit();
-	void printStudyType();
-	void printSpecialization();
-	void printGroup();
-	void printEntranceYear();
-	void printRectorCredential();
-	
-	void printPhoto();
-	void printBarCode();
-
-private:
-
-	StudentTicket * ticket;
-
-};
 
 class TicketManager{
 
