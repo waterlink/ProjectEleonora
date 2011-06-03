@@ -185,168 +185,114 @@ long long Reader::readLongLongLine(){
 
 void TicketManager::readUniversity(){
 
-//	string str;
-//	getline(cin, str);
 	ticket->setUniversity(Reader::readStringLine());
 
 }
 
 void TicketManager::readPart(){
 
-//	string str;
-//	getline(cin, str);
 	ticket->setPart(Reader::readStringLine());
 
 }
 
 void TicketManager::readId(){
 
-//	long long x;
-//	string str;
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%lld", &x);
 	ticket->setId(Reader::readLongLongLine());
 
 }
 
 void TicketManager::readIssueDateYear(){
 
-//	int y;
-//	string str;
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
 	ticket->setIssueDateYear(Reader::readIntLine());
 
 }
 
 void TicketManager::readIssueDateMonth(){
 
-//	int y;
-//	string str;
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
 	ticket->setIssueDateMonth(Reader::readIntLine());
 
 }
 
 void TicketManager::readIssueDateDay(){
 
-//	int y;
-//	string str;
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
 	ticket->setIssueDateDay(Reader::readIntLine());
 
 }
 
 void TicketManager::readExpirationDateYear(){
 
-//	int y;
-//	string str;
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
 	ticket->setExpirationDateYear(Reader::readIntLine());
 
 }
 
 void TicketManager::readExpirationDateMonth(){
 
-//	int y;
-//	string str;
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
 	ticket->setExpirationDateMonth(Reader::readIntLine());
 
 }
 
 void TicketManager::readExpirationDateDay(){
 
-//	int y;
-//	string str;
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
 	ticket->setExpirationDateDay(Reader::readIntLine());
 
 }
 
 void TicketManager::readSurName(){
 
-//	string str;
-//	getline(cin, str);
 	ticket->setSurName(Reader::readStringLine());
 
 }
 
 void TicketManager::readName(){
 
-//	string str;
-//	getline(cin, str);
 	ticket->setName(Reader::readStringLine());
 
 }
 
 void TicketManager::readFatherName(){
 
-//	string str;
-//	getline(cin, str);
 	ticket->setFatherName(Reader::readStringLine());
 
 }
 
 void TicketManager::readFaculty(){
 
-//	string str;
-//	getline(cin, str);
 	ticket->setFaculty(Reader::readStringLine());
 
 }
 
 void TicketManager::readStructuredUnit(){
 
-//	string str;
-//	getline(cin, str);
 	ticket->setStructuredUnit(Reader::readStringLine());
 
 }
 
 void TicketManager::readStudyType(){
 
-//	string str;
-//	getline(cin, str);
 	ticket->setStudyType(Reader::readStringLine());
 
 }
 
 void TicketManager::readSpecialization(){
 
-//	string str;
-//	getline(cin, str);
 	ticket->setSpecialization(Reader::readStringLine());
 
 }
 
 void TicketManager::readGroup(){
 
-//	string str;
-//	getline(cin, str);
 	ticket->setGroup(Reader::readStringLine());
 
 }
 
 void TicketManager::readEntranceYear(){
 
-//	int y;
-//	string str;
-//	getline(cin, str);
-//	sscanf(str.c_str(), "%d", &y);
 	ticket->setEntranceYear(Reader::readIntLine());
 
 }
 
 void TicketManager::readRectorCredential(){
 
-//	string str;
-//	getline(cin, str);
 	ticket->setRectorCredentials(Reader::readStringLine());
 
 }
