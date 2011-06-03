@@ -24,6 +24,16 @@ arising from the use of this software.
 
 #include <iostream>
 
+class Reader{
+
+public:
+
+	static string readStringLine();
+	static int readIntLine();
+	static long long readLongLongLine();
+
+};
+
 class TicketManager{
 
 public:
